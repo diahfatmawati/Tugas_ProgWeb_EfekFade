@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Effek Fade pada Box </title>
+<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+	$("#tombol_fade_out").click(function() {
+    $("#box").fadeOut("slow");})
+    $("#tombol_fade_in").click(function() {
+    $("#box").fadeIn("fast");})
+    $("#tombol_fade_to").click(function() {
+    $("#box").fadeTo("slow",0.3);})
+   	});
+</script>
+<style>
+	#box {
+		width: 250px;
+		height: 200px;
+		background-color: yellow;
+		border: 2px solid black;
+	}
+</style>
+</head>
+<body>
+	<br><div id="box"></div><br>
+	<button id="tombol_fade_out">FadeOut</button>
+	<button id="tombol_fade_in">FadeIn</button>
+	<button id="tombol_fade_to">Fade to 0.3</button>
+</body>
+</html>
